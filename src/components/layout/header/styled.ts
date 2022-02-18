@@ -13,7 +13,7 @@ export const LayoutHeader = styled.header`
 `;
 
 export const LayoutNav = styled.nav`
-	margin: 0 auto;
+	margin-top: 0 auto;
 	max-width: 1200px;
 `;
 
@@ -32,6 +32,7 @@ export const Menu = styled.li`
 	align-items: center;
 	height: 100%;
 	flex-shrink: 0;
+	margin: auto;
 	&: not(: first-child) {
 		margin-left: 5%;
 	}
@@ -52,8 +53,8 @@ export const SearchMenu = styled.li`
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	flex-shrink: 1;
-	margin: 0 0 0 auto;
+	flex-shrink: 0;
+	margin: auto;
 	position: relative;
 `;
 
@@ -64,10 +65,10 @@ export const ALink = styled(Link)`
 export const TextLogo = styled.h1`
 	font-size: 24px;
 	font-weight: 700;
-	& > span {
+	&.primary {
 		color: var(--color-header-span);
 	}
-	& > span {
+	.nonprimary & {
 		color: var(--color-header-notspan);
 	}
 `;
@@ -81,6 +82,7 @@ export const SearchformWrapper = styled.div``;
 
 export const SearchForm = styled.div`
 	width: 100%;
+	display: flex;
 `;
 
 export const SearchLabel = styled.label`
@@ -88,7 +90,7 @@ export const SearchLabel = styled.label`
 	display: flex;
 	align-items: flex;
 	box-sizing: border-box;
-	width: 40%;
+	width: 100%;
 	height: 100%;
 	border-radius: 2px;
 	padding: 7px, 8px;

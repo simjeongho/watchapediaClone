@@ -27,8 +27,8 @@ const Header: React.FC = () => {
 						<Menu>
 							<ALink to="/">
 								<TextLogo>
-									<span className={"primary"}>Watcha</span>
-									<span>pedia</span>
+									<span className="primary">Watcha</span>
+									<span className="nonprimary">pedia</span>
 								</TextLogo>
 							</ALink>
 							<ALink to="/movie">
@@ -44,8 +44,8 @@ const Header: React.FC = () => {
 								<SearchForm>
 									<SearchLabel>
 										<BiSearchAlt />
+										<SearchInput placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요" onChange={handleKeyword} />
 									</SearchLabel>
-									<SearchInput placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요" onChange={handleKeyword} />
 								</SearchForm>
 							</SearchContainer>
 						</SearchMenu>
