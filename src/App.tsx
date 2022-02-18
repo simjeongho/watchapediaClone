@@ -6,16 +6,19 @@ import MainPage from "#pages/MainPage";
 import TvPage from "#pages/TvPage";
 import MovieDetailPage from "#pages/MovieDetail";
 import TvDetailPage from "#pages/TvDetail";
+import Layout from "#components/layout";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<MainPage />} />
-				<Route path="/tv" element={<TvPage />} />
-				<Route path="/movie/:id" element={<MovieDetailPage />} />
-				<Route path="/tv/:id" element={<TvDetailPage />} />
-			</Routes>
+			<Layout>
+				<Routes>
+					<Route path="/" element={<MainPage />} />
+					<Route path="/tv" element={<TvPage />} />
+					<Route path="/movie/:id" element={<MovieDetailPage />} />
+					<Route path="/tv/:id" element={<TvDetailPage />} />
+				</Routes>
+			</Layout>
 		</BrowserRouter>
 	);
 }
