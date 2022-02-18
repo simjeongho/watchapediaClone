@@ -1,5 +1,9 @@
 const TvDetailPage = () => {
-	return <></>;
+	return (
+		<>
+			<h1>Tv detail</h1>
+		</>
+	);
 };
 
 export default TvDetailPage;

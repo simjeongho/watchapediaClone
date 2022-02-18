@@ -1,5 +1,9 @@
 const MovieDetailPage = () => {
-	return <></>;
+	return (
+		<>
+			<h1>movie detail</h1>
+		</>
+	);
 };
 
 export default MovieDetailPage;
