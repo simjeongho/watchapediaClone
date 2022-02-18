@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": "./src",
-		"path": {
+		"paths": {
 			"#hooks/*": ["./hooks/*"],
 			"#components/*": ["./components/*"],
 			"#pages/*": ["./pages/*"],
