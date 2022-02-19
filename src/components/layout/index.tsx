@@ -1,15 +1,20 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
-import Footer from "./footer";
 import Header from "./header";
+import Footer from "#components/layout/footer/index";
 
 type Props = {
 	children: ReactNode;
 };
 
-const LayoutContainer = styled.div``;
+const LayoutContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+`;
 
-const Layout = ({ children }: Props) => {
+const WatchaLayout = ({ children }: Props) => {
 	return (
 		<LayoutContainer>
 			<Header />
@@ -19,4 +24,4 @@ const Layout = ({ children }: Props) => {
 	);
 };
 
-export default Layout;
+export default WatchaLayout;

@@ -8,6 +8,8 @@
 	--color-header-searchlabel: rgb(245, 245, 247);
 	--color-searchinput: rgb(53, 53, 53);
 	--color-signinbutton: rgb(116, 116, 123);
+	--color-Footeremphasis: #ff0558;
+	--color-FooterContainer: #1c1d1f;
 }
 
 body {

@@ -1,8 +1,10 @@
+import { MainPageContainer, MainPageh1 } from "./styled";
+
 const MainPage = () => {
 	return (
-		<>
-			<h1>main page</h1>
-		</>
+		<MainPageContainer>
+			<MainPageh1>MainPage</MainPageh1>
+		</MainPageContainer>
 	);
 };
 

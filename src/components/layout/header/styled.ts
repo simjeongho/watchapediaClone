@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const LayoutHeader = styled.header`
-	position: fixed;
+	display: block;
 	top: 0;
 	left: 0;
 	background-color: var(--color-white);
 	text-align: center;
-	box-shadow: 0px, 1px, 0px, 0px, var(--color-black);
+	box-shadow: 0px 1px 0px 0px var(--color-black);
 	width: 100%;
-	height: 15%;
+	height: 6%;
 `;
 
 export const LayoutNav = styled.nav`
-	margin-top: 0 auto;
+	margin: 0 auto;
 	max-width: 1200px;
 `;
 
