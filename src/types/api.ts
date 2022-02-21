@@ -1,10 +1,8 @@
-//upComing Result
 export type movieApi = {
 	page: string;
 	total_results: number;
 	total_pages: number;
 };
-
 export type movieResults = {
 	poster_path: string | null;
 	adult: boolean;
@@ -27,15 +25,6 @@ export type movieDates = {
 	minimum: string;
 };
 
-export type movieResultUpComing = {
-	page: string;
-	results: movieResults;
-	dates: movieDates;
-	total_Pages: number;
-	total_results: number;
-};
-
-//GetMovie Detail
 export type movieGenres = {
 	id: number;
 	name: string;
@@ -56,7 +45,16 @@ export type movieSpokenLanguage = {
 	iso_639_1: string;
 	name: string;
 };
+//upComing Result
+export type movieResultUpComing = {
+	page: string;
+	results: movieResults;
+	dates: movieDates;
+	total_Pages: number;
+	total_results: number;
+};
 
+//GetMovie Detail
 export type movieResultGetDetail = {
 	adult: boolean;
 	backdrop_path: string | null;
@@ -83,6 +81,13 @@ export type movieResultGetDetail = {
 	video: boolean;
 	vote_average: number;
 	vote_count: number;
+};
+//get similar api
+export type movieResultSimilar = {
+	page: number;
+	results: movieResults;
+	total_pages: number;
+	total_results: number;
 };
 
 //latest api
