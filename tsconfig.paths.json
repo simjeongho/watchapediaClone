@@ -10,7 +10,8 @@
 			"#shared/*": ["./shared/*"],
 			"#apis/*": ["./apis/*"],
 			"#assets/*": ["./assets/*"],
-			"#feature/*": ["./feature/*"]
+			"#feature/*": ["./feature/*"],
+			"#types/*": ["./types/*"]
 		}
 	}
 }
