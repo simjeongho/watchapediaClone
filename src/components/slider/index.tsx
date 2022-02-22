@@ -1,7 +1,7 @@
 import React from "react";
 import ReactSlick, { Settings } from "react-slick";
-import styled from "styled-components";
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import styled, { css } from "styled-components";
+import { MdArrowBackIos, MdArrowForwardIos, MdTranslate } from "react-icons/md";
 
 const ArrowButton = styled.button<{ pos?: "left" | "right" }>`
 	padding: 16px;
@@ -10,6 +10,16 @@ const ArrowButton = styled.button<{ pos?: "left" | "right" }>`
 	z-index: 1;
 	top: 50%;
 	background-color: #fff;
+	${({ pos }) =>
+		pos === "left"
+			? css`
+					left: 0;
+					transform: MdTranslate(-50%, 50%);
+			  `
+			: css`
+					right: 0;
+					transform: translate(50%, -50%);
+			  `};
 	&: before {
 		content: initial;
 	}
