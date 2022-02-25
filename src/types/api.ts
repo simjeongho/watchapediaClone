@@ -48,7 +48,7 @@ export type movieSpokenLanguage = {
 //upComing Result
 export type movieResultUpComing = {
 	page: string;
-	results: movieResults;
+	results: movieResults[];
 	dates: movieDates;
 	total_Pages: number;
 	total_results: number;
