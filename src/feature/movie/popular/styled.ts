@@ -4,6 +4,7 @@ export const PopularMovieContainer = styled.div`
 	margin-bottom: 42px;
 	display: flex;
 	flex-direction: column;
+	width: 95%;
 `;
 
 export const PopularTitle = styled.h4`
