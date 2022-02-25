@@ -42,7 +42,7 @@ const ArrowButton = styled.button<{ pos?: "left" | "right" }>`
 const DEFAULT_SETTINGS: Settings = {
 	dots: false,
 	arrows: true,
-	infinite: false,
+	infinite: true,
 	speed: 500,
 	slidesToShow: 5,
 	slidesToScroll: 5,
