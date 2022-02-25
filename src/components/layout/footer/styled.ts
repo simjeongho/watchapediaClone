@@ -4,7 +4,7 @@ export const LayoutFooter = styled.footer`
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
-	position: fixed;
+
 	bottom: 0;
 `;
 
