@@ -129,7 +129,7 @@ export type movieResultPopular = {
 //nowPlayingApi
 export type movieResultNowPlaying = {
 	page: number;
-	results: movieResults;
+	results: movieResults[];
 	dates: movieDates;
 	total_results: number;
 	total_pages: number;
