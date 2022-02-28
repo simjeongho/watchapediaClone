@@ -1,3 +1,5 @@
+import { NoSubstitutionTemplateLiteral } from "typescript";
+
 export type movieApi = {
 	page: string;
 	total_results: number;
@@ -138,6 +140,110 @@ export type movieResultNowPlaying = {
 export type movieResultTopRated = {
 	page: number;
 	results: movieResults[];
+	total_results: number;
+	total_pages: number;
+};
+
+//Movie Search
+export type movieResultSearch = {
+	page: number;
+	results: movieResults[];
+	total_results: number;
+	total_pages: number;
+};
+
+//TV API
+export type tvGenre = {
+	id: number;
+	name: string;
+};
+
+export type tvNetworks = {
+	id: number;
+	name: string;
+};
+
+export type tvSeasons = {
+	air_date: string;
+	episode_count: number;
+	id: number;
+	poster_path: string | null;
+	season_number: number;
+};
+
+export type tvResult = {
+	poster_path: string | null;
+	popularity: number;
+	id: number;
+	backdrop_path: string | null;
+	vote_average: number;
+	overview: string;
+	first_air_date: string;
+	origin_country: string[];
+	genre_ids: number[];
+	original_language: string;
+	vote_count: number;
+	name: string;
+	original_name: string;
+};
+
+//TV Latest
+export type tvResultLatest = {
+	backdrop_path: string | null;
+	created_by: object[];
+	episode_run_time: number[];
+	first_air_date: string;
+	genres: tvGenre[];
+	homepage: string;
+	id: number;
+	in_production: boolean;
+	languages: string[];
+	last_air_date: string;
+	name: string;
+	networks: tvNetworks[];
+	number_of_episodes: number;
+	number_of_seasons: number;
+	origin_country: string[];
+	original_language: string;
+	original_name: string;
+	overview: null | string;
+	popularity: number;
+	poster_path: string;
+	production_companies: object[];
+	seasons: tvSeasons[];
+	status: string;
+	type: string;
+	vote_average: number;
+	vote_count: number;
+};
+
+//AiringToday
+export type tvResultAiringToday = {
+	page: number;
+	results: tvResult[];
+	total_result: number;
+	total_pages: number;
+};
+
+//Onthe Air
+export type tvResultOnTheAir = {
+	page: number;
+	results: tvResult[];
+	total_results: number;
+	total_pages: number;
+};
+
+//Popular Tv
+export type tvResultPopular = {
+	page: number;
+	results: tvResult[];
+	total_results: number;
+	total_pages: number;
+};
+//toprated tv
+export type tvResultTopRated = {
+	page: number;
+	results: tvResult[];
 	total_results: number;
 	total_pages: number;
 };
