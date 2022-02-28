@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const LayoutHeader = styled.header`
+	position: sticky;
 	display: block;
 	top: 0;
 	left: 0;
@@ -50,6 +51,7 @@ export const MenuButton = styled.button<{ active?: boolean }>`
 export const SearchMenu = styled.li`
 	width: 40%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
@@ -131,4 +133,40 @@ export const SignUpButton = styled.button`
     border: 1px solid rgba(116,116,123,0.5);
     cursor: pointer;
     margin: 15px, 0
+`;
+
+export const SearchResultWrapper = styled.div`
+	position: fixed;
+	top: 2%;
+	left: 40%;
+	background-color: var(--color-light-gray);
+	z-index: 999;
+	width: 40%;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px 0 rgba(0 0 0 0.1);
+	max-height: 5%;
+	overflow-y: scroll;
+`;
+
+export const SearchResultList = styled.ul`
+	list-style: none;
+	margin: 0;
+	padding: 0;
+`;
+
+export const SearchResultItem = styled.li`
+	padding: 4px, 6px;
+	box-sizing: border-box;
+	color: #222;
+	font-size: 16px;
+	width: 100%;
+	height: 7%;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	&:hover {
+		background: #eee;
+	}
 `;
