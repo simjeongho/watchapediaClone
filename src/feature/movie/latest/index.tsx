@@ -1,8 +1,6 @@
 import Card from "#components/card";
 import useLatestMovie from "#hooks/useLatest";
 import React from "react";
-import Slider from "react-slick";
-import { StringLiteralType } from "typescript";
 import { LatestMovieContainer, LatestTitle } from "./styled";
 
 const LatestMovieSection: React.FC = () => {

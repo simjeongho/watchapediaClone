@@ -3,6 +3,8 @@ import ReactSlick, { Settings } from "react-slick";
 import styled, { css } from "styled-components";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { ReactElement } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface Props {
 	settings?: Settings;

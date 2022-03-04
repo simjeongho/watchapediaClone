@@ -1,5 +1,5 @@
 import axiosInstance from ".";
-export const latestApi = () => axiosInstance.get("/tv/latest");
+export const latestTvApi = () => axiosInstance.get("/tv/latest");
 
 export const airingTodayApi = () => axiosInstance.get("/tv/airing_today");
 
