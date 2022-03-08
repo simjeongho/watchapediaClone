@@ -190,7 +190,3 @@ export const MovieDetailBottomInfo = styled.div`
 	background: #fff;
 	border-color: #e3e3e3;
 `;
-
-export const DefaultInfo = styled.div``;
-
-export const Similar = styled.div``;

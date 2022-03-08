@@ -26,14 +26,14 @@ import {
 	MovieDetailStarRateText,
 	MovieDetailTitle,
 	MovieDetailTopInfo,
-	DefaultInfo,
-	Similar,
 } from "./styled";
 
 import { AiOutlinePlayCircle, AiFillEye, AiOutlinePlus } from "react-icons/ai";
 import { FaPen } from "react-icons/fa";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { Rating } from "@mui/material";
+import DefaultInfo from "#feature/movieDetail";
+import SimilarMovies from "../similar";
 
 type Params = {
 	id: string;
@@ -118,8 +118,14 @@ const GetMovieDetail: React.FC = () => {
 
 					<MovieDetailBottomInfo>
 						<MovieDetailContentSectionContainer>
-							<DefaultInfo />
-							<Similar />
+							<DefaultInfo
+								title={data.data.title}
+								year={year}
+								genres={genres}
+								runtime={data.data.runtime}
+								overview={data.data.overview ? data.data.overview : "설명이 없습니다."}
+							/>
+							<SimilarMovies id={id ? id : ""} />
 						</MovieDetailContentSectionContainer>
 					</MovieDetailBottomInfo>
 				</>

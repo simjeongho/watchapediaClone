@@ -75,7 +75,7 @@ export type movieResultGetDetail = {
 	production_countries: movieProductionCountries[];
 	release_date: string;
 	revenue: number;
-	runtime: number | null;
+	runtime: number;
 	spoken_languages: movieSpokenLanguage[];
 	status: string;
 	tagline: string | null;
@@ -87,7 +87,7 @@ export type movieResultGetDetail = {
 //get similar api
 export type movieResultSimilar = {
 	page: number;
-	results: movieResults;
+	results: movieResults[];
 	total_pages: number;
 	total_results: number;
 };
